@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import Button from "./components/Button";
+import Countdown from "./components/CountDown";
+// import Stadistics from "./components/Statistics";
+import "./styles/App.scss";
 
 function App() {
+  function renderMainContent() {
+    return (
+      <>
+        <img
+          src="/background.svg"
+          alt="background image"
+          className="imageBack"
+        ></img>
+        <Countdown />
+      </>
+    );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+      <header></header>
+      <main className="main">{renderMainContent()}</main>
+      <footer className="footer">
+        <span>Counter Challenge by Exequiel Sanoner</span>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+@mixin btn-color($color) {
+  background-color: transparent;
+  border: 5px solid lighten($color, 10%);
+  color: lighten($color, 10%);
+  font-size: 1.5rem;
+
+  &:hover {
+    color: lighten($white, 30%);
+    border: 5px solid lighten($white, 30%);
+  }
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.App-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+
+  h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 10rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .imageBack {
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+    height: 80vh;
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+}
+
+.main {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-height: 0;
+  padding: 1rem 0;
+}
+
+.footer {
+  align-self: stretch;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  margin-top: 10rem;
+
+  span {
+    align-items: center;
+    border-top: 2px dashed white;
+    color: white;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 0 2rem;
+    max-width: 80rem;
+    padding: 0;
+    width: 100%;
+  }
+}

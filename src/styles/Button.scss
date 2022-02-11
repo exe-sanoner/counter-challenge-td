@@ -1,0 +1,102 @@
+@import "_variables.scss";
+@import "mixins.scss";
+
+button {
+  background-color: $primary;
+  border: 2px solid $primary;
+  box-shadow: 2px 2px 5px #9698a1;
+  color: $white;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 20px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  transition: all 0.8s ease;
+  height: 5rem;
+  width: 20rem;
+  outline: none;
+
+  &:hover:not(:disabled) {
+    background-color: transparent;
+    color: $primary;
+  }
+
+  &:active {
+    position: relative;
+    top: 4px;
+  }
+
+  &.keyframe-heartbeat {
+    animation: heartbeat 1s infinite;
+  }
+
+  &.btn-first-stop {
+    @include btn-color($purple);
+  }
+  &.btn-second-stop {
+    @include btn-color($blue);
+  }
+  &.btn-third-stop {
+    @include btn-color($green);
+  }
+  &.btn-fourth-stop {
+    @include btn-color($yellow);
+  }
+  &.btn-fifth-stop {
+    @include btn-color($orange);
+  }
+  &.btn-sixth-stop {
+    @include btn-color($red);
+  }
+  &.btn-did-not-click {
+    @include btn-color($grey);
+  }
+  &.btn-not-able-to-click:hover {
+    // Not able to click
+    @include btn-color($white);
+    animation: shake 0.82s;
+  }
+
+  /* ----- Shake style ----- */
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  /* ----- Heartbeat style ----- */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(0.75);
+    }
+    20% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.75);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(0.75);
+    }
+  }
+}
