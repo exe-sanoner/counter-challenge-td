@@ -2,10 +2,17 @@
   background-color: transparent;
   border: 5px solid lighten($color, 10%);
   color: lighten($color, 10%);
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
 
   &:hover {
     color: lighten($white, 30%);
     border: 5px solid lighten($white, 30%);
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    &:hover {
+      color: lighten($color, 30%);
+      border: 5px solid lighten($color, 30%);
+    }
   }
 }

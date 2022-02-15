@@ -1,8 +1,8 @@
 .container-statistics {
   display: flex;
   flex-direction: column;
-  margin-top: 60rem;
-  margin-bottom: 10rem;
+  margin-top: 50rem;
+  margin-bottom: 5rem;
   width: 90vw;
 
   & button {
@@ -44,6 +44,20 @@
       60% {
         transform: translate3d(4px, 0, 0);
       }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .container-statistics {
+    flex: 1;
+    padding-top: 40rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    & button {
+      font-size: 0.8rem;
+      height: 2.5rem;
+      width: 10rem;
     }
   }
 }
