@@ -32,7 +32,7 @@ export default function Countdown() {
   const [count, setCount] = useState(60);
   const [clickButton, setClickButton] = useState(0);
   const [clickedStyle, setClickedStyle] = useState("");
-  const [delay, setDelay] = useState(100);
+  const [delay, setDelay] = useState(1000);
   const [showStatistics, setShowStatistics] = useState(false);
 
   useInterval(
