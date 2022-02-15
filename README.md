@@ -7,7 +7,7 @@ Pero hay más sorpresas......
 
 ### Deployed version
 
-https://
+https://exe-sanoner.github.io/counter-challenge-td/
 
 ## Run the app locally
 
