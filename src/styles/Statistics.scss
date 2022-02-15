@@ -47,3 +47,13 @@
     }
   }
 }
+
+.container-chart {
+  width: 80rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container-chart {
+    width: 90vw;
+  }
+}
