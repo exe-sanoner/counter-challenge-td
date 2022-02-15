@@ -1,6 +1,7 @@
 {
   "name": "counter-button-challenge",
   "version": "0.1.0",
+  "homepage": "https://exe-sanoner.github.io/counter-challenge-td/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +52,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
     "sass": "^1.49.7"
   }
