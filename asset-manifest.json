@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/counter-challenge-td/static/css/main.9f0c0c9a.css",
-    "main.js": "/counter-challenge-td/static/js/main.01670b00.js",
+    "main.css": "/counter-challenge-td/static/css/main.257062e9.css",
+    "main.js": "/counter-challenge-td/static/js/main.33945605.js",
     "static/js/787.1fc07628.chunk.js": "/counter-challenge-td/static/js/787.1fc07628.chunk.js",
+    "static/media/background.svg": "/counter-challenge-td/static/media/background.ebfc12ddf3f17e9733dbc430636ec61b.svg",
     "index.html": "/counter-challenge-td/index.html",
-    "main.9f0c0c9a.css.map": "/counter-challenge-td/static/css/main.9f0c0c9a.css.map",
-    "main.01670b00.js.map": "/counter-challenge-td/static/js/main.01670b00.js.map",
+    "main.257062e9.css.map": "/counter-challenge-td/static/css/main.257062e9.css.map",
+    "main.33945605.js.map": "/counter-challenge-td/static/js/main.33945605.js.map",
     "787.1fc07628.chunk.js.map": "/counter-challenge-td/static/js/787.1fc07628.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f0c0c9a.css",
-    "static/js/main.01670b00.js"
+    "static/css/main.257062e9.css",
+    "static/js/main.33945605.js"
   ]
 }
