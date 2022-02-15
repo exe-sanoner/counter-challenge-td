@@ -2,13 +2,14 @@
 import Countdown from "./components/CountDown";
 // import Stadistics from "./components/Statistics";
 import "./styles/App.scss";
+import background from "./background.svg";
 
 function App() {
   function renderMainContent() {
     return (
       <>
         <img
-          src="/background.svg"
+          src={background}
           alt="background image"
           className="imageBack"
         ></img>
